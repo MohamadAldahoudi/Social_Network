@@ -14,5 +14,7 @@ def create(db: Session , request: PostBase):
     db.add(new_post)
     db.commit()
     db.refresh(new_post)
+    print (new_post)
     return new_post
+
 
